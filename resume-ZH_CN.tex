@@ -1,0 +1,72 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{程玉洁}
+
+\basicInfo{
+  \item {Java后端开发}\textperiodcentered\ 
+  \email{1522843099@qq.com} \textperiodcentered\ 
+  \phone{13886615204} \textperiodcentered\ 
+  \item 博客：https://blog.csdn.net/weixin_45617512 }
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{长江大学}, 湖北荆州}{2019 -- 至今}
+\textit{在读硕士研究生}\ 计算机技术, 预计 2022 年 6 月毕业
+\datedsubsection{\textbf{武汉商学院}, 湖北武汉}{2015 -- 2019}
+\textit{学士}\ 软件工程
+
+\section{\faCogs\ 专业技能}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 熟悉Java语言
+  \item 熟悉Spring，SpringMVC，SpringBoot，Mybatis-plus等后端开发框架和数据库框架
+  \item 熟悉Mysql的基本使用，了解事务、存储过程、索引等
+  \item 了解微服务框架SpringCloud，负载均衡nginx，消息队列RabbitMQ
+  \item 了解docker的基础概念
+  \item 会简单使用前端的部分知识（html、css、js、jQuery、vue）
+\end{itemize}
+
+\section{\faUsers\ 实习/项目经历}
+\datedsubsection{\textbf{纷享互联科技有限责任公司} 深圳}{2021年4月 -- 2021年10月}
+\role{实习}
+Java后端开发实习生
+\begin{itemize}
+  \item 完成七家企业的数据迁移和实时数据集成
+  \item 实现已入库和即将入库数据比对，使相同数据不再重复占用平台资源，减少平台单张表30%的资源消耗
+\end{itemize}
+
+\datedsubsection{\textbf{智慧井场}}{2020年5月 -- 2021年2月}
+\role{Java}{团队项目，4-5人}
+\begin{onehalfspacing}
+该项目为石油开发企业为方便统计每日施工进度以及日常的石油钻井数据而设计的一个web管理软件。可通过3d视图查看油井内部结构数据，也可通过动画展示钻井过程中注水泥固井时流体在管内的流动情况。
+\begin{itemize}
+  \item 完成钻井基本信息的录入以及部分自动化计算
+  \item 完成固井过程中油井内流体流动情况3D视图的后端编码
+  \item 实现2000+口井的历史数据的同步，并实时拉取其他系统的数据
+\end{itemize}
+\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
